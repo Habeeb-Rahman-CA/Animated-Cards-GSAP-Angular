@@ -1,0 +1,32 @@
+.lightpurple {
+  background-color: #9ab3f5;
+}
+
+.lightgrey {
+  background-color: #f1f3f8;
+}
+
+.lightgreen {
+  background-color: #e8ffff;
+}
+
+.lightorange {
+  background-color: #ffe8d6;
+}
+
+.card{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #eee;
+    width: 250px;
+    border-radius: 15px;
+    height: 250px;
+    box-shadow: 0 10px 15px rgb(162, 162, 162 / 10%);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.645, 0.045, 0.255, 1);
+}
+
+.card:hover{
+    box-shadow: 0 10px 15px rgb(125, 125, 125 / 20%);
+}
