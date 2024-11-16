@@ -39,7 +39,8 @@ export class AnimatedCounterDirective implements OnInit, OnDestroy {
         } else if(this.hasDecimal) {
           if(this.startingValueDecimal < this.getDecimalValuePortion(1)){
             this.startingValueDecimal++
-            this.renderer.setProperty(this.el.nativeElement, 'textContent', `${this.getDecimalValuePortion(0)},${this.startingValueDecimal}${this.staticText ? this.staticText : ''}`)
+            this.renderer.setProperty(this.el.nativeElement, 'textContent', `${this.getDecimalValuePortion(0)}.${this.startingValueDecimal}${this.staticText ? this.staticText : ''}`)
+            setTimeout(start, this.speed)
           }
         }
       }
