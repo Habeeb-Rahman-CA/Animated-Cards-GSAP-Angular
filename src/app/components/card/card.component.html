@@ -13,12 +13,12 @@
                     <h4>{{data.title}}</h4>
                 </div>
                 <div class="card-total">
-                    <span class="total">{{data.amount}}</span>
+                    <span class="total" [appAnimatedCounter]="data.amount" [delay]="1000"></span>
                     <div class="percent-wrapper">
                         <svg class="icon-arrow-up">
                             <use [attr.xlink:href]="'./icon.svg#icon-arrow-thin-up'"></use>
                         </svg>
-                        <span class="percent">{{data.percent}}</span>
+                        <span class="percent" [appAnimatedCounter]="data.percent" [delay]="1200"></span>
                     </div>
                 </div>
             </div>
